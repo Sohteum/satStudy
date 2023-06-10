@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js">
+  </script>
+</head>
+
+<body>
+  <div class="ex1">
+    <input oninput="fnEx1(1, event)" type="text">
+    <p></p>
+  </div>
+  <hr>
+  <div class="ex1">
+    <button value="나는 버튼이다">경고창</button>
+  </div>
+  <hr>
+  <style>
+    .ex3{
+      width:100px;
+      height: 100px;
+      border:1px solid #000;
+    }
+    .active{
+      background-color:red;
+    }
+  </style>
+  <div class="ex3">
+    <button oninput="fnEx1(event)">토글버튼</button>
+    <button oninput="fnEx1(event)">토글버튼</button>
+  </div>
+</body>
+
+</html>
