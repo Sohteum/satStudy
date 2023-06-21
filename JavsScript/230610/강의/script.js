@@ -52,3 +52,19 @@ document.querySelector('button').addEventListener('click', e => {
   plus(1)
 
 }
+
+{
+
+
+document.querySelector(`.open`).addEventListener('click', function(){
+  document.querySelector(`.black-bg`).style.display = 'none'
+})
+
+document.querySelector(`.btn-danger`).addEventListener('click', function(){
+  document.querySelector(`.black-bg`).toggle.classList('show-modal')
+})
+/* document.querySelector(`.btn-danger`).addEventListener('click', function(){
+  document.querySelector(`.black-bg`).add.classList('show-modal')
+}) */
+
+}
