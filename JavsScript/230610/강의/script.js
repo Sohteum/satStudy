@@ -34,13 +34,13 @@
 {
 
 
-document.getElementById(`.open`).addEventListener('click', function(){
+document.querySelector(`.open`).addEventListener('click', e=>{
   document.querySelector(`.black-bg`).classList.add('show-modal')
 })
 
 
-/* document.querySelector(`.btn-danger`).addEventListener('click', function(){
-  document.querySelector(`.black-bg`).add.classList('show-modal')
-}) */
+ document.querySelector(`.btn-danger`).addEventListener('click', function(){
+  document.querySelector(`.black-bg`).style.visibility = 'hidden'
+}) 
 
 }
