@@ -44,3 +44,15 @@ document.querySelector(`.open`).addEventListener('click', e=>{
 }) 
 
 }
+
+{
+ 
+  document.querySelector('button[type=submit]').addEventListener('click', e=>{
+if(input===''){
+alert('아이디와 비밀번호를 입력해주세요')
+}else{
+  alert('안녕!')
+}
+  })
+
+}
