@@ -34,25 +34,26 @@
 {
 
 
-document.querySelector(`.open`).addEventListener('click', e=>{
-  document.querySelector(`.black-bg`).classList.add('show-modal')
-})
+  document.querySelector(`.open`).addEventListener('click', e => {
+    document.querySelector(`.black-bg`).classList.add('show-modal')
+  })
 
 
- document.querySelector(`.btn-danger`).addEventListener('click', function(){
-  document.querySelector(`.black-bg`).style.visibility = 'hidden'
-}) 
+  document.querySelector(`.btn-danger`).addEventListener('click', function (e) {
+    document.querySelector(`.black-bg`).style.visibility = 'hidden'
+  })
 
+  
+    document.getElementById('send').addEventListener('click',function(e) {
+      console.log(tt);
+      if (document.getElementById('email').value() == '') {
+        alert('아이디와 비밀번호를 입력해주세요')
+      } else {
+        alert('안녕!')
+      }
+    })//비번 글자수가 6미만이면 더 길게 입력하라고 안내문 띄우기
 }
 
 {
- 
-  document.querySelector('button[type=submit]').addEventListener('click', e=>{
-if(input===''){
-alert('아이디와 비밀번호를 입력해주세요')
-}else{
-  alert('안녕!')
-}
-  })
 
 }
