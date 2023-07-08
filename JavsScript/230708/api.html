@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+
+    https://codingapple1.github.io/hello.txt 여기로 GET요청하면 인삿말이 옵니다.
+
+https://codingapple1.github.io/price.json 여기로 GET요청하면 가격정보가 옵니다.
+   -->
+
+  <!-- ajax
+   새로고침 없이 겟 포스트 요청하는 기능 -->
+
+  <script>
+/*     $.get('https://codingapple1.github.io/price.json')
+      .done(function (data) {
+        console.log(data.price);
+      })
+      .fail(function(){
+        console.log('실패함');
+      }) */
+
+    fetch('https://codingapple1.github.io/price.json')
+      .then(res=> res.json())
+      .then(date=>{
+        console.log(data.price);
+      })
+        .catch(function(){
+        console.log('실패함');
+      })
+
+    /*   $.post("https://codingapple1.github.io/hello.txt").done(function (data) {
+          console.log(data);
+        })  */
+  </script>
+  연습삼아서 https://codingapple1.github.io/hello.txt 여기로 GET요청해보십시오.
+</body>
+
+</html>

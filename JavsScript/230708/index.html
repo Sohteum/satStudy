@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+    object는 먼저 적었다고 해서 그게 첫번째 데이터는 아님. 배열은 딱 정렬이 있잖아
+       -->
+  <!--   <div class="card-group container">
+    <div class="card">
+      <img src="https://via.placeholder.com/600">
+      <div class="card-body">
+        <h5>Card title</h5>
+        <p>가격 : 70000</p>
+        <button class="btn btn-danger">주문하기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/600">
+      <div class="card-body">
+        <h5>Card title</h5>
+        <p>가격 : 70000</p>
+        <button class="btn btn-danger">주문하기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/600">
+      <div class="card-body">
+        <h5>Card title</h5>
+        <p>가격 : 70000</p>
+        <button class="btn btn-danger">주문하기</button>
+      </div>
+    </div>
+  </div>
+
+  <form class="container my-5 form-group">
+    <p>상품선택</p>
+    <select class="form-select mt-2">
+      <option>모자</option>
+      <option>셔츠</option>
+    </select>
+  </form> -->
+
+  <div class="container mt-3">
+    <div class="card p-3">
+      <span class="car-title">상품명</span>
+      <span class="car-price">가격</span>
+    </div>
+  </div>
+
+
+  <script>
+
+    document.querySelector('.car-title').innerHTML = car2['name']//변수가능. 점찍고 넣는건 변수 불가
+
+    var car2 = {
+      name: '소나타',
+      price: [50000, 3000, 4000]
+    }
+    document.querySelector('.car-price').innerHTML = car2.price[1]
+  </script>
+</body>
+
+</html>
